@@ -7,27 +7,27 @@ import { cn } from "@/lib/utils";
 const screenshots = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    url: "img/galery1.webp",
     alt: "Battle Arena - Savaş Haritası",
-    caption: "Dinamik savaş arenası haritası"
+    caption: "Dinamik savaş arenası haritası",
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    url: "img/galery2.webp",
     alt: "Karakter Seçim Ekranı",
-    caption: "30+ benzersiz karakterden seçim yapın"
+    caption: "30+ benzersiz karakterden seçim yapın",
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    url: "img/galery3.webp",
     alt: "Takım Karşılaşması",
-    caption: "5v5 takım savaşları"
+    caption: "5v5 takım savaşları",
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    url: "img/galery4.webp",
     alt: "Yetenek Geliştirme",
-    caption: "Karakter yeteneklerini özelleştirin"
+    caption: "Karakter yeteneklerini özelleştirin",
   },
 ];
 

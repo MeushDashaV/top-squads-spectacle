@@ -25,7 +25,7 @@ const HeroSection = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/30 to-game-dark/90">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81')] bg-cover bg-center bg-no-repeat mix-blend-overlay opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('img/hero.webp')] bg-cover bg-center bg-no-repeat mix-blend-overlay opacity-30"></div>
       </div>
       
       {/* Content */}
