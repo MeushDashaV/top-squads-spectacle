@@ -1,42 +1,42 @@
 
-import { Gamepad, Shield, Users, Zap, Trophy, Target } from "lucide-react";
+import { Gamepad, Zap, Clock, Trophy, Heart, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const features = [
   {
     icon: Gamepad,
-    title: "Sürükleyici Oyun Deneyimi",
-    description: "Farklı arena haritaları ve gerçekçi grafiklerle sürükleyici bir oyun deneyimi yaşayın.",
-    color: "from-blue-400 to-indigo-500"
+    title: "Kolay Oynanış",
+    description: "Basit sürükle-bırak mekanikleriyle eşyaları birleştirin ve yeni sevimli yaratıklar oluşturun.",
+    color: "from-pink-400 to-purple-500"
   },
   {
-    icon: Shield,
-    title: "Benzersiz Karakterler",
-    description: "Farklı yeteneklere ve özelliklere sahip 30+ karakter arasından seçim yapın.",
+    icon: Clock,
+    title: "Idle Mekanikler",
+    description: "Oyunda olmadığınızda bile ilerleyin, döndüğünüzde kazançlarınızı toplayın.",
     color: "from-purple-400 to-pink-500"
   },
   {
-    icon: Users,
-    title: "Takım Tabanlı Mücadele",
-    description: "Arkadaşlarınızla takım oluşturun ve diğer oyunculara karşı mücadele edin.",
+    icon: Heart,
+    title: "Sevimli Karakterler",
+    description: "Birbirinden tatlı ve eğlenceli şeker canavarları koleksiyonunuzu genişletin.",
     color: "from-orange-400 to-red-500"
   },
   {
     icon: Zap,
-    title: "Dinamik Savaş Sistemi",
-    description: "Gerçek zamanlı, yetenek temelli ve stratejik derinliğe sahip savaş sistemi.",
+    title: "Güçlendirmeler",
+    description: "Üretim hızını artırın, yeni yetenekler açın ve oyunu hızlandırmak için güçlendirmeler yapın.",
     color: "from-green-400 to-teal-500"
   },
   {
     icon: Trophy,
-    title: "Rekabetçi Oyun Modu",
-    description: "Sıralamalı maçlar, turnuvalar ve özel ödüllerle rekabetçi bir deneyim.",
+    title: "Başarılar",
+    description: "Zorlayıcı hedefleri tamamlayarak özel ödüller kazanın ve oyun içi başarılarınızla övünün.",
     color: "from-yellow-400 to-amber-500"
   },
   {
-    icon: Target,
-    title: "Sürekli Güncelleme",
-    description: "Düzenli güncellemelerle yeni karakterler, arenalar ve özellikler eklenmeye devam ediyor.",
+    icon: Star,
+    title: "Düzenli Güncellemeler",
+    description: "Düzenli güncellemelerle yeni içerikler, etkinlikler ve yaratıklar eklenmeye devam ediyor.",
     color: "from-cyan-400 to-blue-500"
   }
 ];
@@ -71,10 +71,10 @@ const FeaturesSection = () => {
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Oyun <span className="text-gradient">Özellikleri</span>
+            Oyun <span className="text-gradient bg-gradient-to-r from-pink-500 to-purple-500">Özellikleri</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Top Squads: Battle Arena, zengin özellikleriyle sizi benzersiz bir oyun deneyimine davet ediyor.
+            Candy Critters: Idle Merge, eğlenceli özellikleriyle sizi sürükleyici bir oyun deneyimine davet ediyor.
           </p>
         </div>
         

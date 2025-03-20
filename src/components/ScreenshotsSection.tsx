@@ -8,26 +8,26 @@ const screenshots = [
   {
     id: 1,
     url: "img/galery1.webp",
-    alt: "Battle Arena - Savaş Haritası",
-    caption: "Dinamik savaş arenası haritası",
+    alt: "Candy Critters - Ana Ekran",
+    caption: "Renkli ve tatlı oyun dünyası",
   },
   {
     id: 2,
     url: "img/galery2.webp",
-    alt: "Karakter Seçim Ekranı",
-    caption: "30+ benzersiz karakterden seçim yapın",
+    alt: "Şeker Yaratıkları",
+    caption: "Sevimli şeker canavarları koleksiyonu",
   },
   {
     id: 3,
     url: "img/galery3.webp",
-    alt: "Takım Karşılaşması",
-    caption: "5v5 takım savaşları",
+    alt: "Birleştirme Mekanikleri",
+    caption: "Eşyaları birleştirerek yeni yaratıklar oluşturun",
   },
   {
     id: 4,
     url: "img/galery4.webp",
-    alt: "Yetenek Geliştirme",
-    caption: "Karakter yeteneklerini özelleştirin",
+    alt: "Güçlendirmeler",
+    caption: "Yeteneklerinizi geliştirin ve daha hızlı ilerleyin",
   },
 ];
 
@@ -69,23 +69,23 @@ const ScreenshotsSection = () => {
   };
 
   return (
-    <section id="screenshots" className="py-20 bg-game-dark text-white">
+    <section id="screenshots" className="py-20 bg-gradient-to-b from-purple-900 to-pink-900 text-white">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Ekran <span className="text-gradient bg-gradient-to-r from-indigo-300 to-purple-300">Görüntüleri</span>
+            Ekran <span className="text-gradient bg-gradient-to-r from-pink-300 to-purple-300">Görüntüleri</span>
           </h2>
           <p className="text-lg text-gray-300">
-            Top Squads: Battle Arena'nın etkileyici görsellerini keşfedin.
+            Candy Critters: Idle Merge'in renkli ve eğlenceli dünyasını keşfedin.
           </p>
         </div>
         
         <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-8">
           {/* Main Screenshot */}
-          <div className="relative aspect-video overflow-hidden bg-game-dark/30">
+          <div className="relative aspect-video overflow-hidden bg-pink-900/30">
             {isLoading && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-10 h-10 border-4 border-game-accent-light border-t-transparent rounded-full animate-spin"></div>
+                <div className="w-10 h-10 border-4 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
               </div>
             )}
             
@@ -134,7 +134,7 @@ const ScreenshotsSection = () => {
         {/* Thumbnails */}
         <div 
           ref={scrollRef}
-          className="flex space-x-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-game-accent scrollbar-track-transparent"
+          className="flex space-x-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-transparent"
         >
           {screenshots.map((screenshot, index) => (
             <div 
@@ -143,7 +143,7 @@ const ScreenshotsSection = () => {
               className={cn(
                 "flex-shrink-0 cursor-pointer rounded-lg overflow-hidden transition-all duration-300",
                 activeIndex === index 
-                  ? "ring-4 ring-game-accent scale-105" 
+                  ? "ring-4 ring-pink-500 scale-105" 
                   : "ring-2 ring-transparent opacity-60 hover:opacity-80"
               )}
               onClick={() => setActiveIndex(index)}

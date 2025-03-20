@@ -8,35 +8,35 @@ import { cn } from "@/lib/utils";
 const reviews = [
   {
     id: 1,
-    avatar: "https://i.pravatar.cc/150?img=1",
-    name: "Ahmet Yılmaz",
-    role: "Pro Oyuncu",
+    avatar: "https://i.pravatar.cc/150?img=33",
+    name: "Ayşe Kaya",
+    role: "Mobil Oyuncu",
     rating: 5,
-    comment: "Stratejik derinliği ve karakter çeşitliliği ile beni gerçekten etkiledi. MOBA oyunlarına yeni bir soluk getirmiş.",
+    comment: "Çok sevimli ve bağımlılık yapıcı bir oyun! Şeker canavarları o kadar tatlı ki, hepsini toplamadan duramıyorum.",
   },
   {
     id: 2,
-    avatar: "https://i.pravatar.cc/150?img=2",
-    name: "Ayşe Demir",
-    role: "Yayıncı",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    name: "Mehmet Şahin",
+    role: "Casual Oyuncu",
     rating: 4,
-    comment: "Grafikleri ve akıcı oynanışı ile dikkat çekiyor. Takım oyunu mekanikleri çok iyi düşünülmüş. Birkaç denge sorunu var ama geliştiriciler sürekli güncelliyor.",
+    comment: "İşten eve dönüşte yolda oynamak için mükemmel. Basit ama aynı zamanda stratejik düşünmeyi gerektiriyor.",
   },
   {
     id: 3,
-    avatar: "https://i.pravatar.cc/150?img=3",
-    name: "Mehmet Kaya",
-    role: "Oyun Eleştirmeni",
+    avatar: "https://i.pravatar.cc/150?img=5",
+    name: "Zeynep Demir",
+    role: "Oyun İncelemecisi",
     rating: 5,
-    comment: "Uzun zamandır bu kalitede bir oyun görmemiştim. Her karakter benzersiz ve oynanışı çok zevkli. Rekabetçi modda saatlerimi harcadım.",
+    comment: "Idle oyun sevenlerin kesinlikle oynaması gereken bir yapım. Grafikleri, sesi ve oynanışı çok başarılı.",
   },
   {
     id: 4,
-    avatar: "https://i.pravatar.cc/150?img=4",
-    name: "Zeynep Şahin",
-    role: "Casual Oyuncu",
+    avatar: "https://i.pravatar.cc/150?img=24",
+    name: "Ahmet Yıldız",
+    role: "Öğrenci",
     rating: 4,
-    comment: "Arkadaşlarla oynaması çok keyifli. Öğrenmesi biraz zor olsa da, vakit harcamaya değer bir oyun deneyimi sunuyor.",
+    comment: "Boş zamanlarımda oynamak için harika. Birleştirme mekanikleri ve idle özellikleri çok iyi düşünülmüş.",
   },
 ];
 
@@ -82,14 +82,14 @@ const ReviewsSection = () => {
   };
   
   return (
-    <section id="reviews" className="py-20 bg-gradient-to-b from-game-dark to-black text-white">
+    <section id="reviews" className="py-20 bg-gradient-to-b from-purple-900 to-pink-900 text-white">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Oyuncu <span className="text-gradient bg-gradient-to-r from-indigo-300 to-purple-300">Yorumları</span>
+            Oyuncu <span className="text-gradient bg-gradient-to-r from-pink-300 to-purple-300">Yorumları</span>
           </h2>
           <p className="text-lg text-gray-300">
-            Top Squads: Battle Arena hakkında oyuncularımızın düşünceleri.
+            Candy Critters: Idle Merge hakkında oyuncularımızın düşünceleri.
           </p>
         </div>
         
@@ -108,7 +108,7 @@ const ReviewsSection = () => {
                       alt={review.name}
                       className="w-14 h-14 rounded-full object-cover mr-4"
                     />
-                    <div className="absolute -top-2 -right-2 bg-game-accent rounded-full p-1">
+                    <div className="absolute -top-2 -right-2 bg-pink-500 rounded-full p-1">
                       <Quote className="h-3 w-3 text-white" />
                     </div>
                   </div>
@@ -160,20 +160,20 @@ const ReviewsSection = () => {
           <h3 className="text-2xl font-bold mb-6">Oyun Başarıları</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="glass-card p-4 rounded-xl bg-white/5 backdrop-blur border border-white/10">
-              <div className="text-3xl font-bold text-game-accent mb-1">10M+</div>
+              <div className="text-3xl font-bold text-pink-500 mb-1">5M+</div>
               <div className="text-sm text-gray-300">İndirme</div>
             </div>
             <div className="glass-card p-4 rounded-xl bg-white/5 backdrop-blur border border-white/10">
-              <div className="text-3xl font-bold text-game-accent mb-1">4.7</div>
+              <div className="text-3xl font-bold text-pink-500 mb-1">4.8</div>
               <div className="text-sm text-gray-300">Ortalama Puan</div>
             </div>
             <div className="glass-card p-4 rounded-xl bg-white/5 backdrop-blur border border-white/10">
-              <div className="text-3xl font-bold text-game-accent mb-1">30+</div>
-              <div className="text-sm text-gray-300">Karakter</div>
+              <div className="text-3xl font-bold text-pink-500 mb-1">50+</div>
+              <div className="text-sm text-gray-300">Şeker Yaratığı</div>
             </div>
             <div className="glass-card p-4 rounded-xl bg-white/5 backdrop-blur border border-white/10">
-              <div className="text-3xl font-bold text-game-accent mb-1">15+</div>
-              <div className="text-sm text-gray-300">Arena Haritası</div>
+              <div className="text-3xl font-bold text-pink-500 mb-1">20+</div>
+              <div className="text-sm text-gray-300">Güçlendirme</div>
             </div>
           </div>
         </div>
